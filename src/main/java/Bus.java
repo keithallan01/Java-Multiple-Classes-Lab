@@ -8,7 +8,7 @@ public class Bus {
 
     public Bus(String destination){
         this.destination = destination;
-        this.capacity = 50;
+        this.capacity = 2;
         this.passengers = new ArrayList<>();
     }
 
@@ -24,6 +24,11 @@ public class Bus {
         return this.passengers.size();
     }
 
+    public void addPassenger(Person person) {
+        if (passengerCount() < this.capacity) {
+            this.passengers.add(person);
+        }
+    }
 
 
 }

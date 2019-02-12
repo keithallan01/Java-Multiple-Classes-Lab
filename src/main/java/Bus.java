@@ -30,5 +30,8 @@ public class Bus {
         }
     }
 
+    public void removePassenger(){
+        this.passengers.remove(0);
+    }
 
 }
